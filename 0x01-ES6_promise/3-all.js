@@ -5,7 +5,7 @@ function handleProfileSignup(){
         const[photoResponse, userResponse] = responses;
         console.log(photoResponse.body, userResponse.firstName, userResponse.lastName);
     }).catch((error)=> {
-        console.error('Error:', error);
+        console.error("Signup system offline");
     })
 }
 
