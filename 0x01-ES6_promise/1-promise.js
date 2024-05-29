@@ -2,7 +2,7 @@ function getResponseFromAPI(bool){
     return new Promise((resolve, reject) => {
         if(bool)
             resolve({
-                status: '200', 
+                status: 200, 
                 body: 'Success'
             });
         else
