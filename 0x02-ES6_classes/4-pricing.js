@@ -1,6 +1,6 @@
+/* eslint-disable no-unused-expressions */
 import Currency from './3-currency';
 
-Currency;
 export default class Pricing {
   constructor(amount, currency) {
     this._amount = amount;
@@ -31,3 +31,5 @@ export default class Pricing {
     return amount * conversionRate;
   }
 }
+
+Currency;
