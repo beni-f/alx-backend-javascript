@@ -1,3 +1,4 @@
+const { count } = require('console');
 const fs = require('fs');
 
 const countStudents = (path) => {
@@ -37,4 +38,4 @@ const countStudents = (path) => {
     }
 }
 
-countStudents('database.csv')
+module.exports = countStudents;
