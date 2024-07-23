@@ -8,4 +8,4 @@ app.get('/', (req, res) => {
     res.send('Hello Holberton School!');
 });
 
-module.exports = app
+module.exports = app;
