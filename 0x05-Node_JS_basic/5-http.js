@@ -1,6 +1,6 @@
 const http = require('http');
 const path = require('path');
-const { countStudents } = require('./3-read_file_async');
+const countStudents = require('./3-read_file_async');
 
 const app = http.createServer(async (req, res) => {
     if (req.url === '/') {
@@ -26,3 +26,5 @@ const app = http.createServer(async (req, res) => {
 app.listen(1245, () => {
     process.stdout.write('');
 });
+
+module.exports = app
