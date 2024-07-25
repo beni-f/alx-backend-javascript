@@ -12,6 +12,6 @@ describe("calculateNumber", () => {
         assert.equal(calculateNumber(1.2, 3.7), 5)
     })
     it('should return 6 for 1.5 + 3.7', () => {
-        assert.equal(calculateNumber(1.5, 3.7), 6)
+        assert.strictEqual(calculateNumber(1.5, 3.7), 6)
     })
 })
