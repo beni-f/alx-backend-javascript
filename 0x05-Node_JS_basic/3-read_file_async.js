@@ -32,23 +32,20 @@ const countStudents = (path) => new Promise((resolve, reject) => {
                     }
                 });
             });
+            const reportParts = [];
             const totalStudents = students.length;
-            console.log(`Number of students: ${totalStudents}`);
+            const num_students = `Number of students: ${totalStudents}`
+            console.log(num_students);
+            reportParts.push(num_students)
 
             Object.keys(fieldMap).forEach(field => {
-                console.log(`Number of students in ${field}: ${fieldMap[field].length}. List: ${fieldMap[field].join(', ')}`); 
+                const stat = `Number of students in ${field}: ${fieldMap[field].length}. List: ${fieldMap[field].join(', ')}`
+                console.log(stat);
+                reportParts.push(stat) 
             });
-            resolve(true);
+            resolve(reportParts.join('\n'));
         }
     });
 });
 
 module.exports = countStudents;
-countStudents("database.csv")
-    .then(() => {
-        console.log("Done!");
-    })
-        .catch((error) => {
-        console.log(error);
-    });
-console.log("After!");
