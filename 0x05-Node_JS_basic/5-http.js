@@ -8,7 +8,7 @@ const app = http.createServer(async (req, res) => {
         res.end('Hello Holberton School!');
     }
     if (req.url === '/students') {
-        const filePath = path.join(__dirname, 'database.csv')
+        const filePath = process.argv[2]
         try {
             const studentData = await countStudents(filePath);
             res.writeHead(200,  { 'Content-Type': 'text/plain' });
