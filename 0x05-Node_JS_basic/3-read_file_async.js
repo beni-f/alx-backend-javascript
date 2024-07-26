@@ -41,7 +41,7 @@ const countStudents = (path) => new Promise((resolve, reject) => {
             Object.keys(fieldMap).forEach(field => {
                 const stat = `Number of students in ${field}: ${fieldMap[field].length}. List: ${fieldMap[field].join(', ')}`
                 console.log(stat);
-                reportParts.push(stat) 
+                reportParts.push(stat);
             });
             resolve(reportParts.join('\n'));
         }
