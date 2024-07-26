@@ -3,7 +3,6 @@
  * @param {String} msg The message to display.
  * @author Bezaleel Olakunori <https://github.com/B3zaleel>
  */
-const module = require('module')
 const displayMessage = (msg) => {
     console.log(msg);
 };
